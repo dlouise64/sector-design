@@ -1,0 +1,28 @@
+form {
+  fieldset {
+    border: 0;
+  }
+
+  legend {
+    margin: 0 auto;
+  }
+
+  label {
+    display: inline-block;
+    text-indent: -100000px;
+  }
+
+  input[type="text"] {
+    border: 0;
+    box-shadow: 0 0 0 1px $color-grey-dark;
+    border-radius: 3px;
+    height: 46px;
+    width: 100%;
+    font-size: $font-md;
+    padding: 0 $spacing-sm;
+
+    &::placeholder {
+      color: $color-grey-dark;
+    }
+  }
+}

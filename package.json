@@ -1,0 +1,24 @@
+{
+  "name": "front-end-test",
+  "version": "1.0.0",
+  "description": "A simple test for front end developer candidates.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sparksi/front-end-test.git"
+  },
+  "author": "Dana Iti <ianzltd@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sparksi/front-end-test/issues"
+  },
+  "homepage": "https://github.com/sparksi/front-end-test#readme",
+  "dependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}

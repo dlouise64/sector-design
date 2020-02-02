@@ -1,54 +1,65 @@
-form {
-  fieldset {
-    border: 0;
+.form {
+  @media (min-width: 660px) {
+    padding-bottom: $spacing-xxxl;
   }
 
-  legend {
-    margin: 0 auto;
-  }
+  form {
+    fieldset {
+      border: 0;
+    }
 
-  label {
-    display: inline-block;
-    text-indent: -100000px;
-  }
+    legend {
+      margin: 0 auto;
+    }
 
-  input[type="text"],
-  select {
-    box-shadow: 0 0 0 1px $color-grey-dark;
-    border: 0;
-    border-radius: 3px;
-    height: 46px;
-    width: 100%;
-    font-size: $font-md;
-    padding: 0 $spacing-sm;
-    color: $color-grey-dark;
-  }
+    label {
+      display: inline-block;
+      text-indent: -100000px;
+    }
 
-  input[type="text"] {
-    &::placeholder {
+    input[type="text"],
+    select {
+      box-shadow: 0 0 0 1px $color-grey-dark;
+      border: 0;
+      border-radius: 3px;
+      height: 46px;
+      width: 100%;
+      font-size: $font-md;
+      padding: 0 $spacing-sm;
       color: $color-grey-dark;
     }
-  }
 
-  .select__wrapper {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 19px;
-      right: 19px;
-      background: url(../assets/caret.png) no-repeat;
-      height: 9px;
-      width: 17px;
+    input[type="text"] {
+      &::placeholder {
+        color: $color-grey-dark;
+      }
     }
 
-    select {
-      appearance: none;
+    .select__wrapper {
+      position: relative;
 
-      &::-ms-expand {
-        display: none;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 19px;
+        right: 19px;
+        background: url(../assets/caret.png) no-repeat;
+        height: 9px;
+        width: 17px;
       }
+
+      select {
+        appearance: none;
+
+        &::-ms-expand {
+          display: none;
+        }
+      }
+    }
+
+    footer {
+      margin: 25px 0;
+      text-align: center;
     }
   }
 }

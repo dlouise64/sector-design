@@ -1,0 +1,16 @@
+.btn--primary {
+  background-color: $color-button-primary;
+  color: $white;
+  font-size: $font-xs;
+  width: 100%;
+  max-width: 206px;
+  height: 46px;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: $color-link-hover;
+  }
+}

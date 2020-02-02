@@ -1,0 +1,8 @@
+.columns {
+  @media (min-width: 660px) {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+  }
+}

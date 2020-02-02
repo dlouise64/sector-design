@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Sarabun:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: $font-base;
+}
+
+body {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $color-primary;
+  @media (min-width: 660px) {
+    font-size: $font-md;
+  }
+}

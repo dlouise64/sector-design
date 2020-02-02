@@ -1,0 +1,18 @@
+h1 {
+  font-size: $font-xl;
+  margin-bottom: $spacing-xl;
+
+  @media (min-width: 660px) {
+    font-size: $font-xxl;
+    margin-bottom: $spacing-xs;
+  }
+}
+
+p {
+  line-height: 1.7;
+  margin: $spacing-md 0;
+}
+
+a {
+  text-decoration: none;
+}

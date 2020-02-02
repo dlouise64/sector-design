@@ -1,0 +1,22 @@
+.cards {
+  margin: $spacing-xxl 0 $spacing-xl;
+
+  .card {
+    margin-bottom: $spacing-xxl;
+
+    h2 {
+      margin: $spacing-sm 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      display: inline-block;
+      height: 48px;
+      line-height: 48px;
+      color: $color-link;
+    }
+  }
+}

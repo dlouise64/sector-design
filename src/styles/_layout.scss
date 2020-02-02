@@ -1,0 +1,11 @@
+.container {
+  margin: $spacing-md $spacing-lg;
+
+  @media (min-width: 660px) {
+    margin: 0 10%;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 25%;
+  }
+}

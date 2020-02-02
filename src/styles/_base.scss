@@ -25,3 +25,9 @@ body {
     font-size: $font-md;
   }
 }
+
+article {
+  @media (min-width: 660px) {
+    padding-top: $spacing-md;
+  }
+}

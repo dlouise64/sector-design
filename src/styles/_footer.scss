@@ -1,0 +1,71 @@
+.page-footer {
+  background: $color-footer-background;
+  padding: $spacing-lg 0;
+  font-size: $font-sm;
+
+  @media (min-width: 660px) {
+    padding: $spacing-lg * 3 0 $spacing-xl;
+  }
+
+  img {
+    width: 220px;
+    height: 52px;
+    margin-bottom: $spacing-lg;
+
+    @media (min-width: 660px) {
+      width: 247px;
+    }
+  }
+
+  &__contact {
+    h4 {
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    > ul {
+      @media (min-width: 660px) {
+        margin-left: $spacing-xxxl;
+      }
+
+      li {
+        margin-bottom: $spacing-md;
+
+        li {
+          font-style: normal;
+          margin: 0;
+
+          a {
+            display: inline-block;
+            height: 48px;
+
+            @media (min-width: 660px) {
+              height: auto;
+            }
+          }
+          &:first-child {
+            a {
+              color: $color-primary;
+            }
+          }
+
+          &:last-child {
+            a {
+              color: $color-link;
+              position: relative;
+              top: -24px;
+              @media (min-width: 660px) {
+                position: static;
+                top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

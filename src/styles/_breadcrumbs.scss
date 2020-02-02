@@ -4,22 +4,27 @@
     margin-right: $spacing-md;
     position: relative;
 
-    &::after {
+    &::before {
       content: "\2022";
       position: absolute;
-      top: 16px;
-      left: -$spacing-xs * 3;
+      top: 15px;
+      right: -18px;
       font-size: $font-xs;
     }
 
-    &:first-child::after {
+    &:last-child::before {
       content: "";
     }
 
     a {
       color: inherit;
       font-size: $font-sm;
+      height: 48px;
       line-height: 48px;
+
+      @media (min-width: 900px) {
+        height: auto;
+      }
     }
   }
 }

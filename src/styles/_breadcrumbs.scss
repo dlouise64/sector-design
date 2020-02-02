@@ -1,0 +1,25 @@
+.breadcrumbs {
+  > li {
+    color: $color-secondary;
+    margin-right: $spacing-md;
+    position: relative;
+
+    &::after {
+      content: "\2022";
+      position: absolute;
+      top: 16px;
+      left: -$spacing-xs * 3;
+      font-size: $font-xs;
+    }
+
+    &:first-child::after {
+      content: "";
+    }
+
+    a {
+      color: inherit;
+      font-size: $font-sm;
+      line-height: 48px;
+    }
+  }
+}

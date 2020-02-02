@@ -6,7 +6,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const autoprefixer = require("autoprefixer");
+
+const postcss = require("./postcss.config");
 
 module.exports = merge(common, {
   mode: "production",
@@ -33,23 +34,7 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          {
-            loader: "postcss-loader",
-            options: {
-              ident: "postcss",
-              plugins: () => [
-                autoprefixer({
-                  grid: "autoplace",
-                  overrideBrowserslist: ["> 1%", "last 2 versions"]
-                })
-              ]
-            }
-          },
-          "sass-loader"
-        ]
+        use: [MiniCssExtractPlugin.loader, "css-loader", postcss, "sass-loader"]
       }
     ]
   }

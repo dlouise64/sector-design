@@ -2,7 +2,8 @@ const path = require("path");
 const merge = require("webpack-merge");
 const common = require("./webpack.common");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const autoprefixer = require("autoprefixer");
+// const autoprefixer = require("autoprefixer");
+const postcss = require("./postcss.config");
 
 module.exports = merge(common, {
   mode: "development",
@@ -19,23 +20,7 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.scss$/,
-        use: [
-          "style-loader",
-          "css-loader",
-          {
-            loader: "postcss-loader",
-            options: {
-              ident: "postcss",
-              plugins: () => [
-                autoprefixer({
-                  grid: "autoplace",
-                  overrideBrowserslist: ["> 1%", "last 2 versions"]
-                })
-              ]
-            }
-          },
-          "sass-loader"
-        ]
+        use: ["style-loader", "css-loader", postcss, "sass-loader"]
       }
     ]
   }

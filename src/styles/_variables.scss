@@ -1,0 +1,42 @@
+$color-primary: #252526;
+$color-secondary: #667891;
+$color-link: #2b5cd8;
+
+// COLOURS
+
+// greys
+$color-grey-dark: #666;
+$color-grey-light: #fafafa;
+
+// typography
+$color-heading: $color-primary;
+$color-paragraph: $color-primary;
+$color-paragraph: $color-primary;
+
+// breadcrumbs
+$color-breadcrumb: $color-secondary;
+
+// forms
+$color-form-border: $color-grey-dark;
+$color-form-placeholder: $color-secondary;
+$color-button-primary: $color-link;
+
+// page footer
+$color-footer-background: $color-grey-light;
+
+// FONT SIZES
+$font-base: 16px;
+$font-xs: 12px;
+$font-sm: 15px;
+$font-md: 18px;
+$font-lg: 24px;
+$font-xl: 32px;
+$font-xxl: 54px;
+
+$spacing-xs: 5px;
+$spacing-sm: 16px;
+$spacing-md: 26px;
+$spacing-lg: $spacing-sm * 2; // 32px
+$spacing-xl: $spacing-md * 2; // 52px
+$spacing-xxl: $spacing-lg * 2; // 64px
+$spacing-xxxl: $spacing-xxl * 2; // 128px
